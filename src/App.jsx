@@ -1,10 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 import RouterComp from './routes/index'
+import Sidebar from './UI/Sidebar/Sidebar'
 function App() {
   return (
     <>
-      <RouterComp />
+      <div className='app'>
+        <Sidebar />
+        <RouterComp />
+      </div>
     </>
   )
 }
