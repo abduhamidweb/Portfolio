@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-
+import RouterComp from './routes/index'
 function App() {
   return (
     <>
-      <h1>My Partfolio</h1>
+      <RouterComp />
     </>
   )
 }
