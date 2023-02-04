@@ -1,7 +1,109 @@
 .sidebar {
-  background: black;
   height: 100vh;
   max-width: 220px;
   width: 100%;
   position: relative;
+  overflow-y: scroll;
+  &__logo {
+    position: sticky;
+    z-index: 99;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: white;
+    a {
+      display: inline-block;
+      width: 70%;
+      padding: 15px 20px;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+  &__lists {
+    list-style: none;
+    padding: 0;
+    overflow-x: hidden;
+    height: 70vh;
+    overflow-y: scroll;
+    &__items {
+      position: relative;
+      overflow-x: hidden;
+      &__link {
+        display: inline-block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        margin: 5px 0;
+        display: flex;
+        transition: all 0.7s ease;
+        align-items: center;
+        justify-content: start;
+        text-decoration: none;
+        background: #f0f0f3;
+        box-shadow: -2.17893px -2.17893px 6.5368px #ffffff,
+          2.17893px 2.17893px 6.5368px rgba(174, 174, 192, 0.4);
+        &:hover {
+          background: #f0f0f39c;
+          box-shadow: -2.17893px -2.17893px 6.5368px #ffffff,
+            2.17893px 2.17893px 6.5368px rgba(174, 174, 192, 0.4);
+        }
+        &:active {
+          background: #ffffff85;
+          box-shadow: -2.17893px -2.17893px 6.5368px #ffffff85,
+            2.17893px 2.17893px 6.5368px rgba(174, 174, 192, 0.4);
+        }
+        .icons {
+          color: black;
+          font-size: 20px;
+        }
+        .text {
+          color: black;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  &__bottom {
+    background: rebeccapurple;
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 30px auto 0px auto;
+    a {
+      i {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__copy {
+    text-align: center;
+    margin-top: 20px;
+    span {
+      font-size: 13px;
+    }
+  }
+}
+.active__link {
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    right: 0;
+    width: 4px;
+    height: 50%;
+    background: red;
+    top: 0;
+    bottom: 0;
+    border-radius: 10px;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+  }
 }

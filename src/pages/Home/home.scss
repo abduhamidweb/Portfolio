@@ -1,6 +1,10 @@
-.home{
-    background: red;
-    height: 100vh;
-    width: 100%;
-    overflow-y: scroll;
+.home {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  &__content {
+    margin: 0px 30px;
+    border: 2px solid #ccc;
+    padding: 20px;
+  }
 }
