@@ -4,8 +4,7 @@ import SidebarLink from '../../components/SidebarLink'
 import { Link } from 'react-router-dom'
 const Sidebar = () => {
   const sidebarlink = [
-    { title: 'portfolio', route: '/' },
-    { title: 'Profil', route: '/profil' },
+    { title: 'Profil', route: '/' },
     { title: 'aboute', route: '/aboute' },
     { title: 'porfolio', route: '/porfolio' },
     { title: 'resume', route: '/resume' },
