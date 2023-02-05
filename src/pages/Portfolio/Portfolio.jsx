@@ -1,11 +1,17 @@
 import React from 'react';
-
+import { useState } from 'react';
 const Portfolio = () => {
-    return (
-        <>
-         <h2>Portfolio</h2>   
-        </>
-    );
+ const [isDay, setIsDay] = useState(true)
+
+ const toggleNightToDay = () => {
+   setIsDay(!isDay)
+ }
+
+ return (
+   <div style={{ backgroundColor: isDay ? '#fff' : '#000', height: '100vh' }}>
+     <button onClick={toggleNightToDay}>Toggle Night/Day</button>
+   </div>
+ )
 };
 
 export default Portfolio;
