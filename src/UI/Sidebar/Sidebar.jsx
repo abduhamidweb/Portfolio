@@ -10,6 +10,7 @@ const Sidebar = () => {
     { title: 'porfolio', route: '/porfolio' },
     { title: 'resume', route: '/resume' },
     { title: 'skils', route: '/skils' },
+    { title: 'tajribam', route: '/tajribam' },
   ]
   return (
     <>

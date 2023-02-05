@@ -1,7 +1,7 @@
 import React from 'react'
 import './home.scss'
-import Headre from '../../UI/Headre';
-import RouterCopmt from "../../routes"
+import Headre from '../../UI/Headre'
+import RouterCopmt from '../../routes'
 const Home = () => {
   return (
     <>
