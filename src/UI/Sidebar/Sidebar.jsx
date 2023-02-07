@@ -8,6 +8,7 @@ const Sidebar = () => {
     { title: 'aboute', route: '/aboute' },
     { title: 'porfolio', route: '/porfolio' },
     { title: 'resume', route: '/resume' },
+    { title: 'servis', route: '/service' },
     { title: 'skils', route: '/skils' },
     { title: 'tajribam', route: '/tajribam' },
   ]
@@ -18,13 +19,15 @@ const Sidebar = () => {
           <Link to='/'>LOGO</Link>
         </div>
         <ul className='sidebar__lists'>
-          {sidebarlink.map((item) => {
+          {
+            sidebarlink.map((item) => {
             return (
               <li className='sidebar__lists__items'>
                 <SidebarLink title={item.title} route={item.route} />
               </li>
             )
-          })}
+            })
+          }
         </ul>
         <div className='sidebar__icons'>
           <a href='' class=' link-secondary'>
@@ -41,7 +44,7 @@ const Sidebar = () => {
           </a>
         </div>
         <div className='sidebar__copy'>
-          <span>@created by abduhamid</span>
+          <span>@Created by abduhamid</span>
         </div>
       </section>
     </>

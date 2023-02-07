@@ -6,10 +6,9 @@ const Portfolio = () => {
   const toggleNightToDay = () => {
     setIsDay(!isDay)
   }
-
   return (
     <div style={{ backgroundColor: isDay ? '#fff' : '#000', height: '100vh' }}>
-      <button onClick={toggleNightToDay}>Toggle Night/Day</button>
+      <p onClick={toggleNightToDay}> dark mode</p>
     </div>
   )
 }
