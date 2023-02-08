@@ -13,7 +13,7 @@ import Service from '../pages/Service/Service'
 const index = () => {
   return (
     <Routes>
-      <Route path='/' element={<Test />} />
+      <Route path='/' element={<Profile />} />
       <Route path='/profil' element={<Profile />} />
       <Route path='/aboute' element={<Aboute />} />
       <Route path='/porfolio' element={<Portfolio />} />
