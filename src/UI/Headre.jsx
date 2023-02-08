@@ -7,21 +7,21 @@ const Headre = () => {
         <div className='container'>
           <div className='header__wrapper'>
             <button className='header__wrapper__btn'>
-              <i class='bi bi-list'></i>
+              <i className='bi bi-list'></i>
             </button>
             <div className='header__wrapper__right'>
-              <select className='form-control w-50'>
-                <option selected disabled>
+              <select className='form-control w-50'  >
+                <option defaultValue={"s"} disabled>
                   lang
                 </option>
-                <option>eng</option>
-                <option>rus</option>
-                <option>uzb</option>
+                <option value={"sj"}>eng</option>
+                <option value={"sj"}>rus</option>
+                <option value={"sj"}>uzb</option>
               </select>
               <div className='dark__mode'>
-                <label class='switch'>
+                <label className='switch'>
                   <input type='checkbox' />
-                  <span class='slider'></span>
+                  <span className='slider'></span>
                 </label>
               </div>
             </div>

@@ -19,28 +19,26 @@ const Sidebar = () => {
           <Link to='/'>LOGO</Link>
         </div>
         <ul className='sidebar__lists'>
-          {
-            sidebarlink.map((item) => {
+          {sidebarlink.map((item) => {
             return (
-              <li className='sidebar__lists__items'>
+              <li className='sidebar__lists__items' key={item.title}>
                 <SidebarLink title={item.title} route={item.route} />
               </li>
             )
-            })
-          }
+          })}
         </ul>
         <div className='sidebar__icons'>
-          <a href='' class=' link-secondary'>
-            <i class='fab fa-facebook-f'></i>
+          <a href='' className=' link-secondary'>
+            <i className='fab fa-facebook-f'></i>
           </a>
-          <a href='' class=' link-secondary'>
-            <i class='fab fa-twitter'></i>
+          <a href='' className=' link-secondary'>
+            <i className='fab fa-twitter'></i>
           </a>
-          <a href='' class=' link-secondary'>
-            <i class='fab fa-linkedin'></i>
+          <a href='' className=' link-secondary'>
+            <i className='fab fa-linkedin'></i>
           </a>
-          <a href='' class=' link-secondary'>
-            <i class='fab fa-github'></i>
+          <a href='' className=' link-secondary'>
+            <i className='fab fa-github'></i>
           </a>
         </div>
         <div className='sidebar__copy'>

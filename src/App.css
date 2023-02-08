@@ -1,6 +1,10 @@
 .app {
   display: flex;
 }
+.container{
+  max-width: 1440px !important;
+  width: 100%;
+}
 ::-webkit-scrollbar {
   width: 0px;
   background: none;

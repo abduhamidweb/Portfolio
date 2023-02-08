@@ -14,7 +14,7 @@ const SidebarLink = ({ title, route }) => {
         }
       >
         <span className='icons'>
-          <i class='bi bi-person'></i>
+          <i className='bi bi-person'></i>
         </span>
         <span className='text'>{title}</span>
       </NavLink>
