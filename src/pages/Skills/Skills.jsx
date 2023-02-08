@@ -1,24 +1,78 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
 import './Skills.scss'
 
 const Skills = () => {
   return (
-    <div className='skills-container'>
-      <h2 className='section-title'>Skills</h2>
-      <div className='card text-center mx-auto my-5 shadow'>
-        <div className='card-body'>
-          <h5 className='card-title text-primary font-weight-bold'>
-            Creative Design
-          </h5>
-          <p className='card-text text-secondary'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum
-            neque eu magna euismod, ut commodo libero pellentesque. Nam dictum
-            est a justo commodo bibendum.
-          </p>
+    <section id='skills'>
+      <div className='container'>
+        <h2 className='section-title'>Skills</h2>
+        <div className='skills-list'>
+          <div className='skill-item'>
+            <div
+              className='skill-icon'
+              style={{ backgroundImage: 'url(nodejs-icon.png)' }}
+            ></div>
+            <h3 className='skill-name'>Node.js/Express</h3>
+          </div>
+          <div className='skill-item'>
+            <div
+              className='skill-icon'
+              style={{ backgroundImage: 'url(html-icon.png)' }}
+            ></div>
+            <h3 className='skill-name'>HTML</h3>
+          </div>
+          <div className='skill-item'>
+            <div
+              className='skill-icon'
+              style={{ backgroundImage: 'url(css-icon.png)' }}
+            ></div>
+            <h3 className='skill-name'>CSS</h3>
+          </div>
+          <div className='skill-item'>
+            <div
+              className='skill-icon'
+              style={{ backgroundImage: 'url(javascript-icon.png)' }}
+            ></div>
+            <h3 className='skill-name'>JavaScript</h3>
+          </div>
+          <div className='skill-item'>
+            <div
+              className='skill-icon'
+              style={{ backgroundImage: 'url(react-icon.png)' }}
+            ></div>
+            <h3 className='skill-name'>React</h3>
+          </div>
+          <div className='skill-item'>
+            <div
+              className='skill-icon'
+              style={{ backgroundImage: 'url(redux-icon.png)' }}
+            ></div>
+            <h3 className='skill-name'>Redux</h3>
+          </div>
+          <div className='skill-item'>
+            <div
+              className='skill-icon'
+              style={{ backgroundImage: 'url(typescript-icon.png)' }}
+            ></div>
+            <h3 className='skill-name'>TypeScript</h3>
+          </div>
+          <div className='skill-item'>
+            <div
+              className='skill-icon'
+              style={{ backgroundImage: 'url(tailwind-icon.png)' }}
+            ></div>
+            <h3 className='skill-name'>Tailwind</h3>
+          </div>
+          <div className='skill-item'>
+            <div
+              className='skill-icon'
+              style={{ backgroundImage: 'url(bootstrap-icon.png)' }}
+            ></div>
+            <h3 className='skill-name'>Bootstrap</h3>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
