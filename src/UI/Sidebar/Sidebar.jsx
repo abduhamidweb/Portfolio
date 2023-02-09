@@ -4,14 +4,13 @@ import SidebarLink from '../../components/SidebarLink'
 import { Link } from 'react-router-dom'
 import myImg from '../../assets/images/myphoto.jpg'
 import { useDispatch, useSelector } from 'react-redux'
-import styled from 'styled-components'
 import { isSidebar2 } from '../../features/counter/counterSlice'
 const Sidebar = () => {
-  const { isSidebar } = useSelector((state) => state.counter);
-  const dispatch = useDispatch();
-    function handlerToggle() {
-      dispatch(isSidebar2())
-    }
+  const { isSidebar } = useSelector((state) => state.counter)
+  const dispatch = useDispatch()
+  function handlerToggle() {
+    dispatch(isSidebar2())
+  }
   const sidebarlink = [
     { title: 'Profil', route: '/', icon: 'fa-solid fa-user' },
     {
@@ -150,6 +149,9 @@ const Sidebar = () => {
           <span>© Copyright Portfolio Designed by Abduhamid</span>
         </div>
       </section>
+      {
+        !isSidebar ?  <div className='sidebar__wrap' onClick={handlerToggle}></div> : ""
+    }
     </>
   )
 }
