@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const SidebarLink = ({ title, route }) => {
+const SidebarLink = ({ title, route, icon }) => {
   return (
     <>
       {/* className='sidebar__lists__items__link active__link' */}
@@ -14,9 +14,13 @@ const SidebarLink = ({ title, route }) => {
         }
       >
         <span className='icons'>
-          <i className='bi bi-person'></i>
+          <i className={icon}></i>
+          <i class='fa-sharp fa-solid fa-rectangle-history'></i>
         </span>
         <span className='text'>{title}</span>
+        <span className='iconActive'>
+          <i className='fa-sharp fa-solid fa-angle-right'></i>
+        </span>
       </NavLink>
     </>
   )

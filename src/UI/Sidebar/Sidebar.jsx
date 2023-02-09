@@ -4,25 +4,37 @@ import SidebarLink from '../../components/SidebarLink'
 import { Link } from 'react-router-dom'
 const Sidebar = () => {
   const sidebarlink = [
-    { title: 'Profil', route: '/' },
-    { title: 'aboute', route: '/aboute' },
-    { title: 'porfolio', route: '/porfolio' },
-    { title: 'resume', route: '/resume' },
-    { title: 'servis', route: '/service' },
-    { title: 'skils', route: '/skils' },
-    { title: 'tajribam', route: '/tajribam' },
+    { title: 'Profil', route: '/', icon: 'fa-solid fa-user' },
+    {
+      title: 'aboute',
+      route: '/aboute',
+      icon: 'fa-solid fa-address-card',
+    },
+    {
+      title: 'portfolio',
+      route: '/porfolio',
+      icon: 'fa-sharp fa-solid fa-diagram-project',
+    },
+    {
+      title: 'resume',
+      route: '/resume',
+      icon: 'fa-solid fa-file',
+    },
+    { title: 'service', route: '/service', icon: 'fa-brands fa-servicestack' },
+    { title: 'skils', route: '/skils', icon: 'fa-solid fa-school' },
+    { title: 'experience', route: '/tajribam', icon: 'bi bi-hourglass-split' },
   ]
   return (
     <>
       <section className='sidebar'>
         <div className='sidebar__logo'>
-          <Link to='/'>LOGO</Link>
+          <Link to='/'>Abduhamid dev</Link>
         </div>
         <ul className='sidebar__lists'>
           {sidebarlink.map((item) => {
             return (
               <li className='sidebar__lists__items' key={item.title}>
-                <SidebarLink title={item.title} route={item.route} />
+                <SidebarLink title={item.title} route={item.route} icon={item.icon } />
               </li>
             )
           })}
