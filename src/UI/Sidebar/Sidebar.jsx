@@ -149,9 +149,11 @@ const Sidebar = () => {
           <span>© Copyright Portfolio Designed by Abduhamid</span>
         </div>
       </section>
-      {
-        !isSidebar ?  <div className='sidebar__wrap' onClick={handlerToggle}></div> : ""
-    }
+      {!isSidebar ? (
+        <div className='sidebar__wrap' onClick={handlerToggle}></div>
+      ) : (
+        ''
+      )}
     </>
   )
 }

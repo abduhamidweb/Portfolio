@@ -413,11 +413,17 @@
   // z-index: 111;
   position: absolute;
 }
+.sidebar__wrap{
+  display: none;
+}
 @media only screen and (max-width: 768px) {
   .sidebar {
     display: none;
   }
   .sidebar2 {
+    display: block;
+  }
+  .sidebar__wrap{
     display: block;
   }
 }
