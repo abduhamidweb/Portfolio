@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   value: 0,
+  isSidebar: true,
 }
 
 export const counterSlice = createSlice({
@@ -21,10 +22,14 @@ export const counterSlice = createSlice({
     incrementByAmount: (state, action) => {
       state.value += action.payload
     },
+    isSidebar: (state) => {
+      state.isSidebar = !state.isSidebar
+    },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { increment, decrement, incrementByAmount, isSidebar } =
+  counterSlice.actions
 
 export default counterSlice.reducer

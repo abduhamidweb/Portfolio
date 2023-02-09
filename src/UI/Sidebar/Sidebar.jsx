@@ -3,7 +3,10 @@ import './sidebar.scss'
 import SidebarLink from '../../components/SidebarLink'
 import { Link } from 'react-router-dom'
 import myImg from '../../assets/images/myphoto.jpg'
+import { useDispatch, useSelector } from 'react-redux'
+
 const Sidebar = () => {
+  const { isSidebar } = useSelector((state) => state.counter)
   const sidebarlink = [
     { title: 'Profil', route: '/', icon: 'fa-solid fa-user' },
     {
@@ -27,7 +30,7 @@ const Sidebar = () => {
   ]
   return (
     <>
-      <section className='sidebar'>
+      <section className={isSidebar ? "sidebar" : "closeSidebar" }>
         <div className='sidebar__logo'>
           <img src={myImg} alt='my img' className='myimg' />
         </div>

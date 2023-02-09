@@ -184,6 +184,7 @@
     }
   }
 }
+
 .active__link {
   background: #3b4451;
   box-shadow: 5px 5px 119px -28px rgba(0, 0, 0, 0.75);
@@ -212,6 +213,9 @@
     transform: translate(-50%, -50%);
   }
 }
-// @media only screen and (max-width: 992px) {
+.closeSidebar {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
 
-// }
+}
