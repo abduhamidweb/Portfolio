@@ -1,11 +1,11 @@
 import React from 'react'
 import './header.scss'
 import { useDispatch, useSelector } from 'react-redux'
-import { isSidebar } from '../features/counter/counterSlice'
+import { isSidebar2 } from '../features/counter/counterSlice'
 const Headre = () => {
   const dispatch = useDispatch()
   function handlerToggle() {
-    dispatch(isSidebar())
+    dispatch(isSidebar2())
   }
   return (
     <>

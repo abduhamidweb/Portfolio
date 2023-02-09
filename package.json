@@ -22,7 +22,8 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.0.2",
     "redux": "^4.2.0",
-    "sass": "^1.58.0"
+    "sass": "^1.58.0",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

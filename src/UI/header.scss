@@ -3,7 +3,8 @@
   top: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background: white;
+  background: #2c2f33;
+
 }
 .header__wrapper {
   display: flex;
@@ -16,6 +17,7 @@
   border: none;
   i {
     font-size: 30px;
+    color: white;
   }
 }
 .header__wrapper__right {
@@ -42,7 +44,6 @@
 
   /* The slider */
   .slider {
-    --background: #28096b;
     position: absolute;
     cursor: pointer;
     top: 0;
