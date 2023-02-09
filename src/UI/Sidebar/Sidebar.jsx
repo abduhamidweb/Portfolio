@@ -34,22 +34,42 @@ const Sidebar = () => {
           {sidebarlink.map((item) => {
             return (
               <li className='sidebar__lists__items' key={item.title}>
-                <SidebarLink title={item.title} route={item.route} icon={item.icon } />
+                <SidebarLink
+                  title={item.title}
+                  route={item.route}
+                  icon={item.icon}
+                />
               </li>
             )
           })}
         </ul>
         <div className='sidebar__icons'>
-          <a href='' className=' link-secondary'>
+          <a
+            href='https://facebook.com'
+            target={'_blank'}
+            className='link-secondary'
+          >
             <i className='fab fa-facebook-f'></i>
           </a>
-          <a href='' className=' link-secondary'>
+          <a
+            href='https://facebook.com'
+            target='_blank'
+            className=' link-secondary'
+          >
             <i className='fab fa-twitter'></i>
           </a>
-          <a href='' className=' link-secondary'>
+          <a
+            href='https://www.linkedin.com/in/abduhamid-botirov-91a44b253/'
+            target='_blank'
+            className=' link-secondary'
+          >
             <i className='fab fa-linkedin'></i>
           </a>
-          <a href='' className=' link-secondary'>
+          <a
+            href='https://github.com/abduhamidweb'
+            target='_blank'
+            className=' link-secondary'
+          >
             <i className='fab fa-github'></i>
           </a>
         </div>

@@ -112,11 +112,18 @@
   &__icons {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 90%;
     margin: 30px auto 0px auto;
     a {
       i {
-        font-size: 15px;
+        font-size: 20px;
+        color: #cedbdc;
+        
+      }
+      &:hover{
+        i{
+          color: #1a91fa;
+        }
       }
     }
   }
@@ -131,6 +138,7 @@
 }
 .active__link {
   background: #3b4451;
+box-shadow: 5px 5px 119px -28px rgba(0,0,0,0.75);
   .icons {
     font-family: 'Montserrat';
     font-style: normal;
