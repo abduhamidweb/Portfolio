@@ -7,10 +7,8 @@ function App() {
   return (
     <>
       <div className='app'>
-        
         <Sidebar />
-<Home/>
-        {/* <RouterComp /> */}
+        <Home />
       </div>
     </>
   )

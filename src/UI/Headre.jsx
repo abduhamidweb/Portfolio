@@ -4,7 +4,6 @@ const Headre = () => {
   return (
     <>
       <div className='header'>
-        <div className='container'>
           <div className='header__wrapper'>
             <button className='header__wrapper__btn'>
               <i className='bi bi-list'></i>
@@ -26,7 +25,6 @@ const Headre = () => {
               </div>
             </div>
           </div>
-        </div>
       </div>
     </>
   )
