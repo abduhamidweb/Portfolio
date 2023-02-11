@@ -31,7 +31,7 @@ const Sidebar = () => {
     { title: 'service', route: '/service', icon: 'fa-brands fa-servicestack' },
     { title: 'skills', route: '/skils', icon: 'fa-solid fa-school' },
     { title: 'experience', route: '/tajribam', icon: 'bi bi-hourglass-split' },
-  ]
+  ];
   return (
     <>
       <section className={isSidebar ? 'sidebar' : 'closeSidebar'}>
