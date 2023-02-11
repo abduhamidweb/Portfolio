@@ -1,16 +1,24 @@
-.about-container {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-
-  .section-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.aboute {
+  &-container {
+    &__row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-gap: 16px;
+      &__col__1 {
+        padding: 20px;
+      }
+      &__col__2 {
+        padding: 20px;
+      }
+    }
   }
-  .about-description {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .aboute {
+    &-container {
+      &__row {
+        grid-template-columns: 1fr;
+      }
+    }
   }
 }
