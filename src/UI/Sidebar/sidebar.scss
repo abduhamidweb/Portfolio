@@ -8,7 +8,7 @@
   padding: 0px 30px 0 15px;
   background: #2c2f33;
   box-shadow: -6.22302px -6.22302px 18.6691px #3b4451,
-    6.22302px 6.22302px 18.6691px #000000;
+    6.22302px 6.22302px 18.6691px #0000005d;
   text-align: center;
   &__logo {
     margin: 20px auto;
@@ -211,6 +211,7 @@
     transform: translate(-50%, -50%);
   }
 }
+
 .closeSidebar {
   display: none;
 }
@@ -413,7 +414,7 @@
   // z-index: 111;
   position: absolute;
 }
-.sidebar__wrap{
+.sidebar__wrap {
   display: none;
 }
 @media only screen and (max-width: 768px) {
@@ -423,7 +424,7 @@
   .sidebar2 {
     display: block;
   }
-  .sidebar__wrap{
+  .sidebar__wrap {
     display: block;
   }
 }

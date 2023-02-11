@@ -11,9 +11,9 @@ const Home = () => {
         <div className='home__content'>
           <div className='container'>
             <RouterCopmt />
-            <Footer/>
           </div>
         </div>
+            <Footer/>
       </div>
     </>
   )

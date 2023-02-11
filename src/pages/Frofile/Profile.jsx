@@ -24,6 +24,7 @@ const Profile = () => {
               experience, I have developed a strong understanding of front-end
               technologies such as React, as well as back-end technologies like
               Node.js and MongoDB.
+              
             </p>
             <div className='profile-social'>
               <a href='#'>

@@ -2,9 +2,13 @@
   height: 100vh;
   width: 100%;
   overflow-y: scroll;
+  background: #2c2f33;
+
   &__content {
-    margin: 0px 30px;
-    border: 2px solid #ccc;
+    margin: 30px 30px;
     padding: 20px;
+    border-radius: 30px;
+    background: #2c2f33;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
   }
 }
