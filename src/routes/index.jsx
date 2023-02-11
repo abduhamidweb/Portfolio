@@ -13,15 +13,10 @@ import Service from '../pages/Service/Service'
 const index = () => {
   return (
     <Routes>
-      <Route path='/' element={<Profile />} />
-      <Route path='/profil' element={<Profile />} />
-      <Route path='/aboute' element={<Aboute />} />
+      <Route path='/' element={<Aboute />} />
       <Route path='/porfolio' element={<Portfolio />} />
-      <Route path='/resume' element={<Resume />} />
       <Route path='/service' element={<Service />} />
       <Route path='/skils' element={<Skills />} />
-      <Route path='/tajribam' element={<Tajriba />} />
-      <Route path='/Supplements' element={<Supplements />} />
     </Routes>
   )
 }

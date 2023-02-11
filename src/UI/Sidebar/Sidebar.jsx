@@ -12,10 +12,9 @@ const Sidebar = () => {
     dispatch(isSidebar2())
   }
   const sidebarlink = [
-    { title: 'Profil', route: '/', icon: 'fa-solid fa-user' },
     {
       title: 'aboute',
-      route: '/aboute',
+      route: '/',
       icon: 'fa-solid fa-address-card',
     },
     {
@@ -23,14 +22,8 @@ const Sidebar = () => {
       route: '/porfolio',
       icon: 'fa-sharp fa-solid fa-diagram-project',
     },
-    {
-      title: 'resume',
-      route: '/resume',
-      icon: 'fa-solid fa-file',
-    },
     { title: 'service', route: '/service', icon: 'fa-brands fa-servicestack' },
     { title: 'skills', route: '/skils', icon: 'fa-solid fa-school' },
-    { title: 'experience', route: '/tajribam', icon: 'bi bi-hourglass-split' },
   ];
   return (
     <>
