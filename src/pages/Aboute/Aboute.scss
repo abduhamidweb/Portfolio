@@ -1,5 +1,11 @@
 .aboute {
   &-container {
+    // background-image: url("../../assets/images/photo_2023-02-12_00-06-46.jpg");
+    // height: 90vh;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+
     &__row {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
