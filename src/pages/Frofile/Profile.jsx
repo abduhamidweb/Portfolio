@@ -8,7 +8,7 @@ const Profile = () => {
       <div className='container'>
         <h2 className='section-title'>Profile</h2>
         <div className='profile-content'>
-          <div className='profile-image'>
+          {/* <div className='profile-image'>
             <img
               src='https://via.placeholder.com/150x150'
               alt='Profile Image'
@@ -37,7 +37,7 @@ const Profile = () => {
                 <i className='fa fa-twitter' />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
