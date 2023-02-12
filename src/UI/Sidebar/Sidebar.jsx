@@ -19,7 +19,7 @@ const Sidebar = () => {
     },
     {
       title: 'portfolio',
-      route: '/porfolio',
+      route: '/portfolio',
       icon: 'fa-sharp fa-solid fa-diagram-project',
     },
     { title: 'service', route: '/service', icon: 'fa-brands fa-servicestack' },
