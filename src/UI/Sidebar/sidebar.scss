@@ -41,7 +41,6 @@
   }
   &__name {
     a {
-      color: #fff;
       text-decoration: none;
       font-size: 24px;
       margin: 0;
@@ -52,6 +51,10 @@
       font-family: 'Poppins', sans-serif;
       line-height: 1.2;
       text-transform: capitalize;
+      color: lightsteelblue;
+      font-family: 'Great Vibes', cursive;
+      font-style: 36px;
+      font-weight: bold;
     }
   }
   &__lists {
@@ -81,7 +84,8 @@
         align-items: center;
         justify-content: start;
         text-decoration: none;
-
+          color: lightsteelblue;
+          font-family: 'Great Vibes', cursive;
         &:hover {
           // background: #f0f0f39c;
           // box-shadow: -2.17893px -2.17893px 6.5368px #ffffff,
@@ -125,7 +129,8 @@
           font-size: 24px;
           line-height: 29px;
 
-          color: #1a91fa;
+            color: #3498db;
+
 
           font-size: 20px;
         }
@@ -164,11 +169,13 @@
         text-transform: none;
         speak: none;
         -webkit-font-smoothing: antialiased;
-        color: #fff;
+                color: lightsteelblue;
+          // font-family: 'Great Vibes', cursive;
       }
       &:hover {
         i {
-          color: #1a91fa;
+  color: #3498db;
+          
         }
       }
     }
@@ -187,10 +194,14 @@
   background: #3b4451;
   box-shadow: 5px 5px 119px -28px rgba(0, 0, 0, 0.75);
   .icons {
-    color: #1a91fa;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
   }
   .text {
-    color: #1a91fa;
+   text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
   }
   .iconActive {
     visibility: visible;

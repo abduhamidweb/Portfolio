@@ -12,6 +12,34 @@
       grid-gap: 16px;
       &__col__1 {
         padding: 20px;
+        color: lightsteelblue;
+        font-family: 'Great Vibes', cursive;
+        font-style: 36px;
+        .hello {
+          color: lightsteelblue;
+          font-family: 'Great Vibes', cursive;
+          font-style: 36px;
+          font-size: 36px;
+          font-weight: bold;
+          line-height: 42px;
+        }
+        .name {
+          font-size: 36px;
+          font-weight: bold;
+          line-height: 42px;
+        }
+        .skills {
+          font-size: 18px;
+          line-height: 24px;
+        }
+        .hobbiy {
+          font-size: 18px;
+          line-height: 24px;
+        }
+        .links {
+          font-size: 18px;
+          line-height: 24px;
+        }
       }
       &__col__2 {
         padding: 20px;

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Aboute = () => {
   const el = useRef(null)
   const typed = useRef(null)
-
+  const colors = ['#3498db', '#2ecc71', '#e74c3c', '#9b59b6', '#f1c40f']
   useEffect(() => {
     const options = {
       strings: [
@@ -25,6 +25,9 @@ const Aboute = () => {
       backSpeed: 100,
       backDelay: 1000,
       loop: true,
+      onStringTyped: (arrayPos) => {
+        el.current.style.color = colors[arrayPos]
+      },
     }
 
     typed.current = new Typed(el.current, options)
@@ -38,26 +41,49 @@ const Aboute = () => {
         <div className='container aboute-container'>
           <div className='aboute-container__row'>
             <div className='aboute-container__row__col__1'>
-              <h2>hi! 👋</h2>
-              <h2> I'm full stack developer. </h2>
-              <p>Hello! My name is Abduhamid, and I am a web developer.</p>
-              <p>
+              <h2 className='hello'>Hello!! 👋</h2>
+              <p className='name'>
+                {' '}
+                My name is Abduhamid, and I am a web developer.
+              </p>
+              <p className='skills'>
                 I have a passion for creating intuitive, user-friendly websites
                 and web applications. With 2022 years of experience, I have a
                 solid understanding of <span className='jops ms-2' ref={el} />
               </p>
-              <p>
-                When I'm not coding, you can find me [insert hobby or personal
-                interest].
+              <p className='hobbiy'>
+                When I'm not coding, you can find me
+                <a href='#' className='ms-2'>
+                  Telegram
+                </a>
+                <a href='#' className='ms-2'>
+                  Instagram
+                </a>
+                <a href='#' className='ms-2'>
+                  Facebook
+                </a>
+                <a href='#' className='ms-2'>
+                  Linkeden
+                </a>
+                <a href='#' className='ms-2'>
+                  Github
+                </a>
+                .
               </p>
-              <p>
+              <p className='links'>
                 Feel free to take a look at my <a href='/projects'>projects</a>{' '}
                 to see some of my recent work, or{' '}
                 <a href='/contact'>contact me</a> if you'd like to work
                 together.
               </p>
-              <Link to={'/portfolio'}>Portfolio</Link>
-              <Link to={'/resume'}>Resume</Link>
+              <div className='portfolioOrResume mt-4 mb-4'>
+                <Link to={'/portfolio'} className='porfolio'>
+                  Portfolio
+                </Link>
+                <Link to={'/resume'} className='ms-3'>
+                  Resume
+                </Link>
+              </div>
             </div>
             <div className='aboute-container__row__col__2'>
               <h3 className='aboute-container__row__col__2__title'>Col 2</h3>

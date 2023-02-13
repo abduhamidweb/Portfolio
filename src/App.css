@@ -21,6 +21,11 @@ body {
   margin: 20px auto 40px auto;
   text-align: center;
 }
+a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
 ::-webkit-scrollbar {
   width: 0px;
   background: none;
