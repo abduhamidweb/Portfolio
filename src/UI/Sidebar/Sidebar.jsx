@@ -24,6 +24,7 @@ const Sidebar = () => {
     },
     { title: 'service', route: '/service', icon: 'fa-brands fa-servicestack' },
     { title: 'skills', route: '/skils', icon: 'fa-solid fa-school' },
+    { title: 'contact', route: '/contact', icon: 'bi bi-person-lines-fill' },
   ]
   return (
     <>

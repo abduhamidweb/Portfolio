@@ -40,15 +40,21 @@ const Aboute = () => {
             <div className='aboute-container__row__col__1'>
               <h2>hi! 👋</h2>
               <h2> I'm full stack developer. </h2>
-              <h1 className='aboute-container__row__col__1__title'>
-                I know
-                <span className='jops ms-2' ref={el} />
-              </h1>
-              <p className='description'>
-                As a Junior Full Stack Web Developer, I have a unique
-                combination of technical skills and creative problem-solving
-                skills that enable you to design and build user-friendly and
-                effective websites.
+              <p>Hello! My name is Abduhamid, and I am a web developer.</p>
+              <p>
+                I have a passion for creating intuitive, user-friendly websites
+                and web applications. With 2022 years of experience, I have a
+                solid understanding of <span className='jops ms-2' ref={el} />
+              </p>
+              <p>
+                When I'm not coding, you can find me [insert hobby or personal
+                interest].
+              </p>
+              <p>
+                Feel free to take a look at my <a href='/projects'>projects</a>{' '}
+                to see some of my recent work, or{' '}
+                <a href='/contact'>contact me</a> if you'd like to work
+                together.
               </p>
               <Link to={'/portfolio'}>Portfolio</Link>
               <Link to={'/resume'}>Resume</Link>

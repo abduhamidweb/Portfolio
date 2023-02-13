@@ -4,6 +4,7 @@ import Aboute from '../pages/Aboute/Aboute'
 import Portfolio from '../pages/Portfolio/Portfolio'
 import Skills from '../pages/Skills/Skills'
 import Service from '../pages/Service/Service'
+import Contact from '../pages/contact/Contact'
 
 const index = () => {
   return (
@@ -12,6 +13,7 @@ const index = () => {
       <Route path='/portfolio' element={<Portfolio />} />
       <Route path='/service' element={<Service />} />
       <Route path='/skils' element={<Skills />} />
+      <Route path='/contact' element={<Contact/>}/>
     </Routes>
   )
 }
