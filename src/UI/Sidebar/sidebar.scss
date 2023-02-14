@@ -84,8 +84,8 @@
         align-items: center;
         justify-content: start;
         text-decoration: none;
-          color: lightsteelblue;
-          font-family: 'Great Vibes', cursive;
+        color: lightsteelblue;
+        font-family: 'Great Vibes', cursive;
         &:hover {
           // background: #f0f0f39c;
           // box-shadow: -2.17893px -2.17893px 6.5368px #ffffff,
@@ -129,8 +129,7 @@
           font-size: 24px;
           line-height: 29px;
 
-            color: #3498db;
-
+          color: #3498db;
 
           font-size: 20px;
         }
@@ -169,13 +168,12 @@
         text-transform: none;
         speak: none;
         -webkit-font-smoothing: antialiased;
-                color: lightsteelblue;
-          // font-family: 'Great Vibes', cursive;
+        color: lightsteelblue;
+        // font-family: 'Great Vibes', cursive;
       }
       &:hover {
         i {
-  color: #3498db;
-          
+          color: #3498db;
         }
       }
     }
@@ -194,14 +192,14 @@
   background: #3b4451;
   box-shadow: 5px 5px 119px -28px rgba(0, 0, 0, 0.75);
   .icons {
-  text-decoration: none;
-  color: #3498db;
-  font-weight: bold;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
   }
   .text {
-   text-decoration: none;
-  color: #3498db;
-  font-weight: bold;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
   }
   .iconActive {
     visibility: visible;

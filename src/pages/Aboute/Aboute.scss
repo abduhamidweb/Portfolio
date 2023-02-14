@@ -7,14 +7,19 @@
     // background-size: contain;
 
     &__row {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      grid-gap: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       &__col__1 {
         padding: 20px;
         color: lightsteelblue;
         font-family: 'Great Vibes', cursive;
         font-style: 36px;
+        height: 100%;
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+
         .hello {
           color: lightsteelblue;
           font-family: 'Great Vibes', cursive;
@@ -35,6 +40,10 @@
         .hobbiy {
           font-size: 18px;
           line-height: 24px;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          flex-wrap: wrap;
         }
         .links {
           font-size: 18px;
@@ -43,6 +52,32 @@
       }
       &__col__2 {
         padding: 20px;
+        max-width: 500px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        .img-wrapper {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          img {
+            // display: inline; 
+            // box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+            // border-radius: 10px;
+            // transition: transform 0.2s ease-in-out;
+            // opacity: 0.5;
+          }
+        }
+
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .aboute {
+    &-container {
+      &__row {
+       flex-wrap: wrap;
       }
     }
   }
