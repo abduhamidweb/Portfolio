@@ -54,28 +54,38 @@ const Aboute = () => {
       typed.current.destroy()
     }
   }, [])
-   
-  
+
   return (
     <>
       <section id='aboute' className='aboute'>
         <div className='container aboute-container'>
           <div className='aboute-container__row'>
-            <div className='aboute-container__row__col__1'>
-              <h2 className='hello'>Hello!! 👋</h2>
+            <div
+              className='aboute-container__row__col__1'
+              // data-aos='fade-up'
+              // data-aos-offset='200'
+              // data-aos-delay='50'
+              // data-aos-duration='700'
+              // data-aos-easing='ease-in-out'
+              // data-aos-mirror='true'
+              // data-aos-once='false'
+              // data-aos-anchor-placement='top-center'
+            >
+              <h2>Hello!! 👋</h2>
 
-              <p className='name'>
-                {' '}
-                My name is Abduhamid, and I am a web developer.
-              </p>
-              <p className='skills'>
+              <p> My name is Abduhamid, and I am a web developer.</p>
+              <p>
                 I have a passion for creating intuitive, user-friendly websites
                 and web applications. With 2022 years of experience, I have a
                 solid understanding of <span className='jops ms-2' ref={el} />
               </p>
               <p className='hobbiy'>
                 When I'm not coding, you can find me
-                <a href='https://t.me/AbduhamidBotirov' target='_blank' className='ms-2'>
+                <a
+                  href='https://t.me/AbduhamidBotirov'
+                  target='_blank'
+                  className='ms-2'
+                >
                   Telegram
                 </a>
                 <a
@@ -119,7 +129,17 @@ const Aboute = () => {
                 </Link>
               </div>
             </div>
-            <div className='aboute-container__row__col__2'>
+            <div
+              className='aboute-container__row__col__2'
+              // data-aos='fade-up'
+              // data-aos-offset='200'
+              // data-aos-delay='50'
+              // data-aos-duration='700'
+              // data-aos-easing='ease-in-out'
+              // data-aos-mirror='true'
+              // data-aos-once='false'
+              // data-aos-anchor-placement='top-center'
+            >
               <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
