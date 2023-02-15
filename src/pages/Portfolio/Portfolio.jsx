@@ -17,14 +17,6 @@ const Portfolio = () => {
         <div className='container'>
           <div className='row row__twoo'>
             <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
           </div>
         </div>
       </section>

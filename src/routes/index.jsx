@@ -5,15 +5,16 @@ import Portfolio from '../pages/Portfolio/Portfolio'
 import Skills from '../pages/Skills/Skills'
 import Service from '../pages/Service/Service'
 import Contact from '../pages/contact/Contact'
-
+import DetailPage from '../pages/Portfolio/DetailPage'
 const index = () => {
   return (
     <Routes>
       <Route path='/' element={<Aboute />} />
       <Route path='/portfolio' element={<Portfolio />} />
+      <Route path='/portfolio/:id' element={<DetailPage />} />
       <Route path='/service' element={<Service />} />
       <Route path='/skils' element={<Skills />} />
-      <Route path='/contact' element={<Contact/>}/>
+      <Route path='/contact' element={<Contact />} />
     </Routes>
   )
 }
