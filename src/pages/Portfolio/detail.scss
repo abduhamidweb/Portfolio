@@ -1,0 +1,52 @@
+.detail {
+  &__content__wrap {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    .col-1__content {
+      background: gray;
+      width: 60%;
+    }
+    .col-2__content {
+      width: 40%;
+      background: gainsboro;
+    }
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .detail {
+    &__content__wrap {
+      flex-direction: column;
+      .col-1__content {
+        background: gray;
+        width: 100%;
+      }
+      .col-2__content {
+        width: 100%;
+        background: gainsboro;
+      }
+    }
+  }
+}
+// @media only screen and (max-width: 1024px) {
+//   .detail {
+//     &__content__wrap {
+//       display: flex;
+//       justify-content: space-between;
+//       color: white;
+//       .col-1__content {
+//         background: gray;
+//         width: 60%;
+//         height: 70vh;
+//       }
+//       .col-2__content {
+//         width: 40%;
+//         background: gainsboro;
+//       }
+//     }
+//   }
+// }
+@media only screen and (max-width: 786px) {
+}
+@media only screen and (max-width: 576px) {
+}
