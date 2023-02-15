@@ -69,11 +69,14 @@ const Aboute = () => {
               // data-aos-easing='ease-in-out'
               // data-aos-mirror='true'
               // data-aos-once='false'
-              // data-aos-anchor-placement='top-center'
+              // data-aos-anchor- placement='top-center'
             >
-              <h2>Hello!! 👋</h2>
+              <h2 className='hello'>Hello!! 👋</h2>
 
-              <p> My name is Abduhamid, and I am a web developer.</p>
+              <p className='name'>
+                {' '}
+                My name is Abduhamid, and I am a web developer.
+              </p>
               <p>
                 I have a passion for creating intuitive, user-friendly websites
                 and web applications. With 2022 years of experience, I have a
@@ -95,13 +98,13 @@ const Aboute = () => {
                 >
                   Instagram
                 </a>
-                <a href='#' className='ms-2'>
+                <a href='#' className='mx-2'>
                   Facebook
                 </a>
                 <a
                   href='https://www.linkedin.com/in/abduhamid-botirov-91a44b253/'
                   target='_blank'
-                  className='ms-2'
+                  className=''
                 >
                   Linkeden
                 </a>
