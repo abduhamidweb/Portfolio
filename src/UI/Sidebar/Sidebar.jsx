@@ -33,7 +33,7 @@ const Sidebar = () => {
           <img src={myImg} alt='my img' className='myimg' />
         </div>
         <div className='sidebar__name'>
-          <Link to={'/'}>abduhamid botirov</Link>
+          <Link to={'/'} title='home'>abduhamid botirov</Link>
         </div>
         <div className='sidebar__icons'>
           <a

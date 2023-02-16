@@ -12,17 +12,19 @@ const Headre = () => {
       <div className='header'>
         <div className='header__wrapper'>
           <button className='header__wrapper__btn' onClick={handlerToggle}>
-            <i className='bi bi-list'></i>
+            <i className='bi bi-list' title='toggle'></i>
           </button>
           <div className='header__wrapper__right'>
-            <select className='form-control w-50'>
-              <option defaultValue={'s'} disabled>
-                lang
-              </option>
-              <option value={'sj'}>eng</option>
-              <option value={'sj'}>rus</option>
-              <option value={'sj'}>uzb</option>
-            </select>
+            <div className='formSelector'>
+              <select className='form-wrap w-50 selector'>
+                <option disabled selected>
+                  lang
+                </option>
+                <option>eng</option>
+                <option>rus</option>
+                <option>uzb</option>
+              </select>
+            </div>
             <div className='dark__mode'>
               <label className='switch'>
                 <input type='checkbox' />

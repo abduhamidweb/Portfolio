@@ -11,12 +11,12 @@ const Card = () => {
           </Link>
           <div className='card-info'>
             <div className='card-title'>
-              <h5 className='title'>Example Title</h5>
+              <h5 className='title w-75'>Alibaba</h5>
               <span className='stars'>
                 <i className='far fa-heart'></i> 10
               </span>
             </div>
-            <div className='card-description'>Example description </div>
+            <div className='card-description'>Alibaba </div>
             <div className='card-viewer'>
               <a href='http://example.com' target='_blank'>
                 <i className='far fa-eye'></i> 100 Live Demo

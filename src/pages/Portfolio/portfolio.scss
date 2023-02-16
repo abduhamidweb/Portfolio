@@ -1,4 +1,4 @@
-.row__twoo{
+.row__twoo {
   display: flex !important;
   justify-content: start !important;
 }
@@ -9,42 +9,45 @@
   overflow: hidden;
   margin: 20px;
   background: #2a353f;
+  // transform: translate(1s);
   img {
+    transition: all 0.5s ease;
     width: 100%;
     height: auto;
     display: block;
+    &:hover{
+      transform: scale(1.1,1.1);
+    }
   }
   .card-info {
-    color: #ffffff;
+    background: #212431;
+    color: lightsteelblue;
     padding: 16px;
     .card-title {
       display: flex;
       justify-content: space-between;
       font-size: 18px Oxygen, sans-serif;
       .stars {
-        i{
+        i {
           cursor: pointer;
         }
       }
       .title {
-      font-size: 14px Oxygen, sans-serif;
-
+        font-size: 14px Oxygen, sans-serif;
       }
     }
 
     .card-description {
       font-size: 14px Oxygen, sans-serif;
-      color: #CECED0;
-      
     }
-    .card-viewer{
+    .card-viewer {
       padding-top: 16px;
     }
   }
 }
-@media only screen and (max-width: 1250px){
-  .row__twoo{
-    .col-lg-3{
+@media only screen and (max-width: 1250px) {
+  .row__twoo {
+    .col-lg-3 {
       max-width: 350px;
       width: 100%;
       margin: 0px auto;
