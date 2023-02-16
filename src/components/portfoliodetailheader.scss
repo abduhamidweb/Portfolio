@@ -1,0 +1,38 @@
+.addElement {
+    padding: 5px 8px;
+  background: #ececec65;
+  transition-delay: 0.1s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .laptop_icons {
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+    span {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+    .red{
+        background: red;
+    }
+    .brown{
+        background: brown;
+    }
+    .green{
+        background: green;
+    }
+  }
+  .iconToWebsite{
+    margin-right: 10px;
+  }
+}
+
+.bwsHeader {
+  position: relative;
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 225 162 / var(--tw-bg-opacity));
+  border-radius: 4px 4px 0 0;
+  transition: 0.1s ease;
+}
