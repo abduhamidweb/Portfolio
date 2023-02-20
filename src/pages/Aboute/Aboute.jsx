@@ -4,6 +4,8 @@ import myimg from '../../assets/images/person.png'
 import Typed from 'typed.js'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import languages from '../../lang/Lang'
+import { useSelector } from 'react-redux'
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -11,11 +13,8 @@ import 'swiper/css/navigation'
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper'
 // Animation
-import { fadeIn } from 'react-animations'
-import { bounce } from 'react-animations'
-import Radium, { StyleRoot } from 'radium'
-
 const Aboute = () => {
+  const { lang } = useSelector((state) => state.counter)
   const el = useRef(null)
   const typed = useRef(null)
   // const progressCircle = useRef(null)
@@ -25,7 +24,6 @@ const Aboute = () => {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`
   }
   const colors = ['#3498db', '#2ecc71', '#e74c3c', '#9b59b6', '#f1c40f']
-
   useEffect(() => {
     const options = {
       strings: [
@@ -55,35 +53,21 @@ const Aboute = () => {
     }
   }, [])
 
+  const { hello, about, creative, find, search1, search2, search3 } =
+    languages[lang]
   return (
     <>
       <section id='aboute' className='aboute'>
         <div className='container aboute-container'>
           <div className='aboute-container__row'>
-            <div
-              className='aboute-container__row__col__1'
-              // data-aos='fade-up'
-              // data-aos-offset='200'
-              // data-aos-delay='50'
-              // data-aos-duration='700'
-              // data-aos-easing='ease-in-out'
-              // data-aos-mirror='true'
-              // data-aos-once='false'
-              // data-aos-anchor- placement='top-center'
-            >
-              <h2 className='hello'>Hello!! 👋</h2>
-
-              <p className='name'>
-                {' '}
-                My name is Abduhamid, and I am a web developer.
-              </p>
+            <div className='aboute-container__row__col__1'>
+              <h2 className='hello'>{hello}! 👋</h2>
+              <p className='name'> {about}</p>
               <p>
-                I have a passion for creating intuitive, user-friendly websites
-                and web applications. With 2022 years of experience, I have a
-                solid understanding of <span className='jops ms-2' ref={el} />
+                {creative} <span className='jops ms-2' ref={el} />
               </p>
               <p className='hobbiy'>
-                When I'm not coding, you can find me
+                {find}
                 <a
                   href='https://t.me/AbduhamidBotirov'
                   target='_blank'
@@ -118,10 +102,9 @@ const Aboute = () => {
                 .
               </p>
               <p className='links'>
-                Feel free to take a look at my <a href='/projects'>projects</a>{' '}
-                to see some of my recent work, or{' '}
-                <Link to='/contact'>contact me</Link> if you'd like to work
-                together.
+                {search1}
+                <a href='/projects'> projects </a> {search2}
+                <Link to='/contact'> contact me </Link> {search3}
               </p>
               <div className='portfolioOrResume mt-4 mb-4'>
                 <Link to={'/portfolio'} className='porfolio'>

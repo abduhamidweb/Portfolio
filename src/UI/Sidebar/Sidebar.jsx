@@ -12,8 +12,8 @@ const Sidebar = () => {
   function handlerToggle() {
     dispatch(isSidebar2())
   }
-  const {name} = languages[lang]
-  
+  const { name } = languages[lang]
+
   const sidebarlink = [
     {
       title: 'aboute',
@@ -37,9 +37,7 @@ const Sidebar = () => {
         </div>
         <div className='sidebar__name'>
           <Link to={'/'} title='home'>
-            {
-              name ? name : "Abduhamid Botirov "
-           }
+            {name ? name : 'Abduhamid Botirov '}
           </Link>
         </div>
         <div className='sidebar__icons'>
