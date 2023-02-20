@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './sidebar.scss'
 import SidebarLink from '../../components/SidebarLink'
 import { Link } from 'react-router-dom'
 import myImg from '../../assets/images/myphoto.jpg'
 import { useDispatch, useSelector } from 'react-redux'
 import { isSidebar2 } from '../../features/counter/counterSlice'
+import languages from '../../lang/Lang'
 const Sidebar = () => {
-  const { isSidebar } = useSelector((state) => state.counter)
+  const { isSidebar, lang } = useSelector((state) => state.counter)
   const dispatch = useDispatch()
   function handlerToggle() {
     dispatch(isSidebar2())
   }
+  const {name} = languages[lang]
+  
   const sidebarlink = [
     {
       title: 'aboute',
@@ -33,7 +36,11 @@ const Sidebar = () => {
           <img src={myImg} alt='my img' className='myimg' />
         </div>
         <div className='sidebar__name'>
-          <Link to={'/'} title='home'>abduhamid botirov</Link>
+          <Link to={'/'} title='home'>
+            {
+              name ? name : "Abduhamid Botirov "
+           }
+          </Link>
         </div>
         <div className='sidebar__icons'>
           <a

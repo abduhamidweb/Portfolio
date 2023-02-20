@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.scss'
 import { useDispatch, useSelector } from 'react-redux'
-import { isSidebar2 } from '../features/counter/counterSlice'
+import { isSidebar2, lang } from '../features/counter/counterSlice'
 const Headre = () => {
   const dispatch = useDispatch()
   function handlerToggle() {
@@ -16,7 +16,12 @@ const Headre = () => {
           </button>
           <div className='header__wrapper__right'>
             <div className='formSelector'>
-              <select className='form-wrap w-50 selector'>
+              <select
+                className='form-wrap w-50 selector'
+                onChange={(e) => {
+                  dispatch(lang(e.target.value.trim().toLowerCase()))
+                }}
+              >
                 <option disabled selected>
                   lang
                 </option>
