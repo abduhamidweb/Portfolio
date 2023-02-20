@@ -17,7 +17,7 @@
   border: none;
   i {
     font-size: 30px;
-    color: white;
+    color: lightsteelblue;
   }
 }
 .header__wrapper__right {
@@ -33,13 +33,12 @@
     text-transform: uppercase;
     border: 1px solid transparent;
     outline: none !important;
-
   }
   .form-wrap {
     width: 100% !important;
     padding: 5px 0;
   }
-  .formSelector{
+  .formSelector {
     background: red;
   }
   .switch {
