@@ -1,14 +1,26 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import './detail.scss'
 import PortfolioDetailHeader from '../../components/PortfolioDetailHeader'
+
 const DetailPage = () => {
+  const [width, setWidth] = useState(200)
+  const [height, setHeight] = useState(200)
+
+  const handleMouseMove = (e) => {
+    setWidth(e.movementX + width)
+    setHeight(e.movementY + height)
+  }
   return (
     <>
       <section className='detail'>
         <div className='container'>
           <div className='detail__content__wrap'>
-            <div className='detail__content__col col-1__content'>
-              <div className='detail__content__col__header'>
+            <div
+              className='detail__content__col col-1__content mx-auto'
+              // style={{ width: `${width}px`, height: `${height}px` }}
+              // onMouseMove={handleMouseMove}
+            >
+              <div className='detail__content__col__header '>
                 <PortfolioDetailHeader />
               </div>
               <div className='col-1__content__body'>

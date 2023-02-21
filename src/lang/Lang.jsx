@@ -14,7 +14,7 @@ const languages = {
   uzb: {
     name: 'Abduhamid Botirov',
     hello: 'Salom',
-    search1: "Bemalol qarang",
+    search1: 'Bemalol qarang',
     search2: "so'nggi ishimni ko'rish uchun yoki",
     search3: `agar ishlamoqchi bo'lsangiz birga.`,
     find: `Men kod yozmayotgan bo'lsam, meni

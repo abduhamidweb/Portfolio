@@ -5,7 +5,7 @@
     color: white;
     .col-1__content {
       width: 66%;
-
+position: relative;
       &__header {
         position: static;
         top: 0;
@@ -42,6 +42,15 @@
       width: 33%;
     }
   }
+}
+#handle {
+  width: 10px;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: col-resize;
 }
 @media only screen and (max-width: 1279px) {
   .detail {
