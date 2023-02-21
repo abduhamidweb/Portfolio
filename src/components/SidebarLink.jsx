@@ -7,6 +7,7 @@ const SidebarLink = ({ title, route, icon }) => {
       {/* className='sidebar__lists__items__link active__link' */}
       <NavLink
         to={route}
+        title={title}
         className={({ isActive }) =>
           isActive
             ? 'sidebar__lists__items__link active__link'
