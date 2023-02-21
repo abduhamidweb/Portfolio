@@ -74,10 +74,14 @@
         .swiper-button-next {
           color: lightsteelblue !important;
         }
+        .swiper-pagination-bullet-active{
+          background: lightsteelblue !important;
+        }
       }
     }
   }
 }
+
 @media only screen and (max-width: 1200px) {
   .aboute {
     &-container {
