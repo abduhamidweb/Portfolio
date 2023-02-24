@@ -11,7 +11,7 @@ const PortfolioDetailHeader = () => {
         </div>
         <span className='iconToWebsite'>
           <a href='https://getbootstrap.com/' target='_blank'>
-            <i className='bi bi-arrow-up-right-square-fill text-light'></i>
+            <i className='bi bi-arrow-up-right-square-fill'></i>
           </a>
         </span>
       </div>

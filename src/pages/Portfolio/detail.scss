@@ -2,10 +2,10 @@
   &__content__wrap {
     display: flex;
     justify-content: space-between;
-    color: white;
+    flex-wrap: wrap;
     .col-1__content {
-      width: 66%;
-position: relative;
+      width: 70%;
+      position: relative;
       &__header {
         position: static;
         top: 0;
@@ -15,7 +15,7 @@ position: relative;
         overflow-y: scroll;
         position: relative;
         box-shadow: inset 0 0 10px #eeeeee2d;
-        &__iframe{
+        &__iframe {
           width: 100%;
           height: 100%;
         }
@@ -39,7 +39,90 @@ position: relative;
       }
     }
     .col-2__content {
-      width: 33%;
+      width: 24%;
+      .col-1__content__content__title {
+        h2 {
+          margin-bottom: 1.25rem;
+          font-size: 1.659523650625rem;
+          font-family: Oxygen, sans-serif;
+          font-weight: 700;
+          line-height: 1.25;
+          color: lightsteelblue;
+        }
+      }
+      .col-1__content__content__desc {
+        p {
+          display: block;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          color: lightsteelblue;
+        }
+      }
+      .col-1__content__content__links {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        a {
+          padding-left: 2.5rem;
+          padding-right: 2.5rem;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          color: white;
+          margin: 5px 0;
+        }
+        a:nth-child(1) {
+          border: 1px solid rgba(18, 243, 172, 0.25);
+          &:hover {
+            background-image: linear-gradient(
+              to right,
+              var(--tw-gradient-stops)
+            );
+            --tw-gradient-from: #059669;
+            --tw-gradient-to: rgba(5, 150, 105, 0);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+            --tw-gradient-to: #25b1c8;
+            --tw-text-opacity: 1;
+          }
+        }
+        a:nth-child(2) {
+          border: 1px solid rgba(18, 243, 172, 0.25);
+
+          background-image: linear-gradient(to right, var(--tw-gradient-stops));
+          --tw-gradient-from: #059669;
+          --tw-gradient-to: rgba(5, 150, 105, 0);
+          --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+          --tw-gradient-to: #25b1c8;
+          --tw-text-opacity: 1;
+        }
+      }
+      .col-1__content__content__information {
+        margin-top: 32px;
+        padding-top: 16px;
+        h3 {
+          color: lightsteelblue;
+        }
+        .information {
+          .item__information {
+            padding-top: 6px;
+            padding-bottom: 6px;
+            font-family: Oxygen, sans-serif;
+            line-height: 1.625;
+            .key {
+              color: lightsteelblue;
+              min-width: 120px;
+              line-height: 1.625;
+              display: inline-block;
+            }
+            .val {
+              color: rgb(255, 255, 255);
+              font-family: Oxygen, sans-serif;
+              line-height: 1.625;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -57,12 +140,27 @@ position: relative;
     &__content__wrap {
       flex-direction: column;
       .col-1__content {
-        background: gray;
         width: 100%;
+        padding-bottom: 70px;
+        .col-1__content__media {
+          display: none;
+        }
       }
       .col-2__content {
         width: 100%;
-        background: gainsboro;
+        .col-1__content__content {
+          width: 60%;
+          margin: auto;
+          text-align: center;
+          &__links {
+            a {
+              width: 45%;
+            }
+          }
+          &__information {
+            text-align: start;
+          }
+        }
       }
     }
   }
@@ -86,6 +184,36 @@ position: relative;
 //   }
 // }
 @media only screen and (max-width: 786px) {
+    .detail {
+    &__content__wrap {
+      flex-direction: column;
+      .col-1__content {
+        width: 100%;
+        padding-bottom: 70px;
+        .col-1__content__media {
+          display: none;
+        }
+      }
+      .col-2__content {
+        width: 100%;
+        .col-1__content__content {
+          width: 60%;
+          margin: auto;
+          text-align: center;
+          &__links {
+            flex-direction: column;
+            a {
+              width: 100%;
+              padding:8px 0px ;
+            }
+          }
+          &__information {
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 576px) {
 }

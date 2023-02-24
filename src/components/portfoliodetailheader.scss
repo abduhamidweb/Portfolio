@@ -1,31 +1,48 @@
 .addElement {
-    padding: 5px 8px;
-  background: #ececec65;
+  padding: 2px 8px;
+  background: #ececec;
   transition-delay: 0.1s;
   display: flex;
   justify-content: space-between;
   align-items: center;
   .laptop_icons {
     display: flex;
-    width: 80px;
+    width: 50px;
     justify-content: space-between;
     span {
-      width: 20px;
-      height: 20px;
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
     }
-    .red{
-        background: red;
+    .red {
+      background: red;
     }
-    .brown{
-        background: brown;
+    .brown {
+      background: brown;
     }
-    .green{
-        background: green;
+    .green {
+      background: green;
     }
   }
-  .iconToWebsite{
-    margin-right: 10px;
+  .iconToWebsite {
+    a {
+      i {
+        border: 1px solid #dcdcdc;
+        text-decoration: none;
+        color: #2a2a2a;
+        font-size: 80%;
+        border-radius: 3px;
+        padding: 2px 5px;
+        display: inline-block;
+        height: 24px;
+        line-height: 18px;
+        background: #fff;
+        transform: translateY(1px) translateX(3px);
+        display: flex;
+        align-content: center;
+        align-items: center;
+      }
+    }
   }
 }
 
