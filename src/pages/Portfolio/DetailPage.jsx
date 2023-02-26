@@ -16,6 +16,10 @@ const DetailPage = () => {
               <div className='detail__content__col__header '>
                 <PortfolioDetailHeader />
               </div>
+
+
+
+              
               <div className='col-1__content__body'>
                 <iframe
                   src='https://getbootstrap.com/'
