@@ -1,0 +1,70 @@
+.contact {
+  #get-in-touch {
+    color: #cedbdc;
+    font-size: 39px;
+    margin: 16px 0;
+  }
+  p {
+    color: lightsteelblue;
+    margin: 0px 0px 20px;
+  }
+  #location,
+  #phone {
+    color: #cedbdc;
+    font-size: 31px;
+    margin: 16px 0px 18px;
+  }
+  .contactme {
+    color: #cedbdc;
+    font: 30px 'Questrial', sans-serif;
+  }
+  label {
+    color: #cedbdc;
+  }
+  input {
+    padding: 12px 20px;
+    background: #212431;
+    background-color: transparent;
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(47 64 80 / var(--tw-border-opacity));
+    outline: none;
+    color: #cedbdc;
+  }
+  textarea {
+    background: #212431;
+    padding: 12px 20px;
+    background-color: transparent;
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(47 64 80 / var(--tw-border-opacity));
+    outline: none;
+    color: #cedbdc;
+  }
+  button {
+    background: lightsteelblue;
+    color:#212431 ;
+    padding: 11px 16px;
+    &:hover {
+      background: lightsteelblue;
+      color:  #212431;
+      padding: 11px 16px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mediaInput {
+    flex-direction: column !important;
+    .col-6 {
+      width: 100%;
+      &:nth-child(2) {
+        margin-top: 3.5rem !important;
+      }
+    }
+  }
+  .contact{
+    button{
+        width: 100%;
+    }
+  }
+}
