@@ -18,7 +18,9 @@ const Contact = () => {
                 <h3 id='location'>Location</h3>
                 <p>Toshkent Uzbekiston</p>
                 <h3 id='phone'>Phone</h3>
-                <p>+88544767456</p>
+                <p>
+                  <a href='tel://+998997867075'>+998997867075</a>
+                </p>
               </div>
               <div className='mt-3 pt-3'>
                 <h3 className='contactme'>Contact Me</h3>
