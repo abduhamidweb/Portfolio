@@ -1,97 +1,21 @@
-#skills {
-  .container {
-    max-width: 800px;
-    text-align: center;
-  }
-
-  .section-title {
-    font-size: 36px;
-    margin-bottom: 50px;
-  }
-
-  .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    .skill-item {
-      width: calc(33.33% - 20px);
-      background-color: #f9f9f9;
-      padding: 40px;
-      text-align: center;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 40px;
-
-      .skill-icon {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-      }
-
-      .skill-name {
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 20px;
-      }
-    }
-  }
-}
-.skill-icon {
-  width: 50px;
-  height: 50px;
-  background-size: cover;
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
 }
 
-.nodejs {
-  background-image: url('./nodejs-icon.png');
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: lightsteelblue;
 }
 
-.html {
-  background-image: url('./html-icon.png');
-}
-
-.css {
-  background-image: url('./css-icon.png');
-}
-
-.javascript {
-  background-image: url('./javascript-icon.png');
-}
-
-.react {
-  background-image: url('./react-icon.png');
-}
-
-.redux {
-  background-image: url('./redux-icon.png');
-}
-
-.typescript {
-  background-image: url('./typescript-icon.png');
-}
-
-.tailwind {
-  background-image: url('./tailwind-icon.png');
-}
-
-.bootstrap {
-  background-image: url('./bootstrap-icon.png');
-}
-
-@media (max-width: 767px) {
-  .skill-icon {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .skill-icon {
-    width: 30px;
-    height: 30px;
-  }
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
 }

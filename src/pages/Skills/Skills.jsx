@@ -1,78 +1,159 @@
 import React from 'react'
 import './Skills.scss'
-
+import { useRef } from 'react'
+import ProgressBar from '@ramonak/react-progress-bar'
 const Skills = () => {
   return (
-    <section id='skills'>
-      <div className='container'>
-        <h2 className='section-title'>Skills</h2>
-        <div className='skills-list'>
-          <div className='skill-item'>
-            <div
-              className='skill-icon'
-              style={{ backgroundImage: 'url(nodejs-icon.png)' }}
-            ></div>
-            <h3 className='skill-name'>Node.js/Express</h3>
+    //  <!-- ======= Skills Section ======= -->
+    <section id='skills' class='skills section-bg'>
+      <div class='container'>
+        <div class='section-title'>
+          <h2>Skills </h2>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+        </div>
+
+        <div class='row skills-content'>
+          <div class='col-lg-6' data-aos='fade-up'>
+            <div class='progress'>
+              <span class='skill'>
+                HTML <i class='val'>100%</i>
+              </span>
+              <div class='progress-bar-wrap bg-info'>
+                {/* <div
+                  class='progress-bar'
+                  role='progressbar'
+                  aria-valuenow='100'
+                  aria-valuemin='10'
+                  aria-valuemax='100'
+                ></div> */}
+                {
+                  <ProgressBar
+                    completed={60}
+                    className='skill'
+                    ariaValuemax='100'
+                    height='10px'
+                    borderRadius='0'
+                    ariaValuemin='0'
+                    labelClassName='progress'
+                    labelAlignment='left'
+                    bgColor='lightsteelblue'
+                    baseBgColor='#212431'
+                  />
+                }
+              </div>
+            </div>
+
+            <div class='progress'>
+              <span class='skill'>
+                CSS <i class='val'>90%</i>
+              </span>
+              <div class='progress-bar-wrap'>
+                <ProgressBar
+                  completed={60}
+                  className='skill'
+                  ariaValuemax='100'
+                  height='10px'
+                  borderRadius='0'
+                  ariaValuemin='0'
+                  labelClassName='progress'
+                  labelAlignment='left'
+                  bgColor='lightsteelblue'
+                  baseBgColor='#212431'
+                />
+              </div>
+            </div>
+
+            <div class='progress'>
+              <span class='skill'>
+                JavaScript <i class='val'>75%</i>
+              </span>
+              <div class='progress-bar-wrap'>
+                <ProgressBar
+                  completed={60}
+                  className='skill'
+                  ariaValuemax='100'
+                  height='10px'
+                  borderRadius='0'
+                  ariaValuemin='0'
+                  labelClassName='progress'
+                  labelAlignment='left'
+                  bgColor='lightsteelblue'
+                  baseBgColor='#212431'
+                />
+              </div>
+            </div>
           </div>
-          <div className='skill-item'>
-            <div
-              className='skill-icon'
-              style={{ backgroundImage: 'url(html-icon.png)' }}
-            ></div>
-            <h3 className='skill-name'>HTML</h3>
-          </div>
-          <div className='skill-item'>
-            <div
-              className='skill-icon'
-              style={{ backgroundImage: 'url(css-icon.png)' }}
-            ></div>
-            <h3 className='skill-name'>CSS</h3>
-          </div>
-          <div className='skill-item'>
-            <div
-              className='skill-icon'
-              style={{ backgroundImage: 'url(javascript-icon.png)' }}
-            ></div>
-            <h3 className='skill-name'>JavaScript</h3>
-          </div>
-          <div className='skill-item'>
-            <div
-              className='skill-icon'
-              style={{ backgroundImage: 'url(react-icon.png)' }}
-            ></div>
-            <h3 className='skill-name'>React</h3>
-          </div>
-          <div className='skill-item'>
-            <div
-              className='skill-icon'
-              style={{ backgroundImage: 'url(redux-icon.png)' }}
-            ></div>
-            <h3 className='skill-name'>Redux</h3>
-          </div>
-          <div className='skill-item'>
-            <div
-              className='skill-icon'
-              style={{ backgroundImage: 'url(typescript-icon.png)' }}
-            ></div>
-            <h3 className='skill-name'>TypeScript</h3>
-          </div>
-          <div className='skill-item'>
-            <div
-              className='skill-icon'
-              style={{ backgroundImage: 'url(tailwind-icon.png)' }}
-            ></div>
-            <h3 className='skill-name'>Tailwind</h3>
-          </div>
-          <div className='skill-item'>
-            <div
-              className='skill-icon'
-              style={{ backgroundImage: 'url(bootstrap-icon.png)' }}
-            ></div>
-            <h3 className='skill-name'>Bootstrap</h3>
+
+          <div class='col-lg-6' data-aos='fade-up' data-aos-delay='100'>
+            <div class='progress'>
+              <span class='skill'>
+                PHP <i class='val'>80%</i>
+              </span>
+              <div class='progress-bar-wrap'>
+                <ProgressBar
+                  completed={60}
+                  className='skill'
+                  ariaValuemax='100'
+                  height='10px'
+                  borderRadius='0'
+                  ariaValuemin='0'
+                  labelClassName='progress'
+                  labelAlignment='left'
+                  bgColor='lightsteelblue'
+                  baseBgColor='#212431'
+                />
+              </div>
+            </div>
+
+            <div class='progress'>
+              <span class='skill'>
+                WordPress/CMS <i class='val'>90%</i>
+              </span>
+              <div class='progress-bar-wrap'>
+                <ProgressBar
+                  completed={60}
+                  className='skill'
+                  ariaValuemax='100'
+                  height='10px'
+                  borderRadius='0'
+                  ariaValuemin='0'
+                  labelClassName='progress'
+                  labelAlignment='left'
+                  bgColor='lightsteelblue'
+                  baseBgColor='#212431'
+                />
+              </div>
+            </div>
+
+            <div class='progress'>
+              <span class='skill'>
+                Photoshop <i class='val'>55%</i>
+              </span>
+              <div class='progress-bar-wrap'>
+                <ProgressBar
+                  completed={60}
+                  className='skill'
+                  ariaValuemax='100'
+                  height='10px'
+                  borderRadius='0'
+                  ariaValuemin='0'
+                  labelClassName='progress'
+                  labelAlignment='left'
+                  bgColor='lightsteelblue'
+                  baseBgColor='#212431'
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    // <!-- End Skills Section-- >
   )
 }
 
