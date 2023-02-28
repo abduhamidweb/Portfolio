@@ -61,16 +61,15 @@
           width: 100%;
           height: 100%;
           text-align: center;
-              display: flex;
-            justify-content: center;
-            align-items: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           img {
             // display: inline;
             // box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
             // border-radius: 10px;
             // transition: transform 0.2s ease-in-out;
             // opacity: 0.5;
-        
           }
         }
         .swiper-button-prev {
@@ -79,12 +78,61 @@
         .swiper-button-next {
           color: lightsteelblue !important;
         }
-        .swiper-pagination-bullet-active{
+        .swiper-pagination-bullet-active {
           background: lightsteelblue !important;
         }
       }
     }
   }
+}
+.skills {
+  h2 {
+    color: lightsteelblue;
+    font-size: 39px;
+    margin: 16px 0;
+    text-align: center;
+    position: relative;
+    &::after {
+      display: block;
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: lightsteelblue;
+      content: '';
+      top: 110%;
+      left: 50%;
+      margin: auto;
+      transform: translate(-50%, -50%);
+    }
+  }
+  p{
+        padding: 20px;
+    color: lightsteelblue;
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+    font-style: 36px;
+  }
+}
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: lightsteelblue;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
 }
 
 @media only screen and (max-width: 1200px) {

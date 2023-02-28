@@ -26,6 +26,10 @@ a {
   color: #3498db;
   font-weight: bold;
 }
+html:not(.no-js) [data-aos^='fade'][data-aos^='fade'] {
+  opacity: 1 !important;
+}
+
 ::-webkit-scrollbar {
   width: 0px;
   background: none;

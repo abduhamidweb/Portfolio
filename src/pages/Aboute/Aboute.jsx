@@ -1,3 +1,4 @@
+import ProgressBar from '@ramonak/react-progress-bar'
 import React, { useRef, useEffect } from 'react'
 import './Aboute.scss'
 import myimg from '../../assets/images/person.png'
@@ -12,6 +13,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper'
+import Skills from './../Skills/Skills'
 // Animation
 const Aboute = () => {
   const { lang } = useSelector((state) => state.counter)
@@ -60,7 +62,10 @@ const Aboute = () => {
       <section id='aboute' className='aboute'>
         <div className='container aboute-container'>
           <div className='aboute-container__row'>
-            <div className='aboute-container__row__col__1'>
+            <div
+              className='aboute-container__row__col__1'
+   
+            >
               <h2 className='hello'>{hello}! 👋</h2>
               <p className='name'> {about}</p>
               <p>
@@ -117,14 +122,7 @@ const Aboute = () => {
             </div>
             <div
               className='aboute-container__row__col__2'
-              // data-aos='fade-up'
-              // data-aos-offset='200'
-              // data-aos-delay='50'
-              // data-aos-duration='700'
-              // data-aos-easing='ease-in-out'
-              // data-aos-mirror='true'
-              // data-aos-once='false'
-              // data-aos-anchor-placement='top-center'
+      
             >
               <Swiper
                 spaceBetween={30}
@@ -175,6 +173,152 @@ const Aboute = () => {
                   <span ref={progressContent}></span>
                 </div>
               </Swiper>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id='skills' class='skills section-bg'>
+        <div class='section-title_skill'>
+          <h2>Skills </h2>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+        </div>
+
+        <div class='row mt-3'>
+          <div class='col-lg-6' data-aos='fade-up'>
+            <div class='progress'>
+              <span class='skill'>
+                HTML <i class='val'>100%</i>
+              </span>
+              <div class='progress-bar-wrap bg-info'>
+                {/* <div
+                  class='progress-bar'
+                  role='progressbar'
+                  aria-valuenow='100'
+                  aria-valuemin='10'
+                  aria-valuemax='100'
+                ></div> */}
+                {
+                  <ProgressBar
+                    completed={60}
+                    className='skill'
+                    ariaValuemax='100'
+                    height='10px'
+                    borderRadius='0'
+                    ariaValuemin='0'
+                    labelClassName='progress'
+                    labelAlignment='left'
+                    bgColor='lightsteelblue'
+                    baseBgColor='#212431'
+                  />
+                }
+              </div>
+            </div>
+
+            <div class='progress'>
+              <span class='skill'>
+                CSS <i class='val'>90%</i>
+              </span>
+              <div class='progress-bar-wrap'>
+                <ProgressBar
+                  completed={60}
+                  className='skill'
+                  ariaValuemax='100'
+                  height='10px'
+                  borderRadius='0'
+                  ariaValuemin='0'
+                  labelClassName='progress'
+                  labelAlignment='left'
+                  bgColor='lightsteelblue'
+                  baseBgColor='#212431'
+                />
+              </div>
+            </div>
+
+            <div class='progress'>
+              <span class='skill'>
+                JavaScript <i class='val'>75%</i>
+              </span>
+              <div class='progress-bar-wrap'>
+                <ProgressBar
+                  completed={60}
+                  className='skill'
+                  ariaValuemax='100'
+                  height='10px'
+                  borderRadius='0'
+                  ariaValuemin='0'
+                  labelClassName='progress'
+                  labelAlignment='left'
+                  bgColor='lightsteelblue'
+                  baseBgColor='#212431'
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class='col-lg-6' data-aos='fade-up' data-aos-delay='100'>
+            <div class='progress'>
+              <span class='skill'>
+                PHP <i class='val'>80%</i>
+              </span>
+              <div class='progress-bar-wrap'>
+                <ProgressBar
+                  completed={60}
+                  className='skill'
+                  ariaValuemax='100'
+                  height='10px'
+                  borderRadius='0'
+                  ariaValuemin='0'
+                  labelClassName='progress'
+                  labelAlignment='left'
+                  bgColor='lightsteelblue'
+                  baseBgColor='#212431'
+                />
+              </div>
+            </div>
+
+            <div class='progress'>
+              <span class='skill'>
+                WordPress/CMS <i class='val'>90%</i>
+              </span>
+              <div class='progress-bar-wrap'>
+                <ProgressBar
+                  completed={60}
+                  className='skill'
+                  ariaValuemax='100'
+                  height='10px'
+                  borderRadius='0'
+                  ariaValuemin='0'
+                  labelClassName='progress'
+                  labelAlignment='left'
+                  bgColor='lightsteelblue'
+                  baseBgColor='#212431'
+                />
+              </div>
+            </div>
+
+            <div class='progress'>
+              <span class='skill'>
+                Photoshop <i class='val'>55%</i>
+              </span>
+              <div class='progress-bar-wrap'>
+                <ProgressBar
+                  completed={60}
+                  className='skill'
+                  ariaValuemax='100'
+                  height='10px'
+                  borderRadius='0'
+                  ariaValuemin='0'
+                  labelClassName='progress'
+                  labelAlignment='left'
+                  bgColor='lightsteelblue'
+                  baseBgColor='#212431'
+                />
+              </div>
             </div>
           </div>
         </div>
