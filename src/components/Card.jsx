@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Card = ({imgURL}) => {
+const Card = ({imgURL, a}) => {
   return (
     <>
       <div className='col-lg-3 col-md-6 col-sm-12'>
@@ -13,7 +13,7 @@ const Card = ({imgURL}) => {
             <div className='card-title'>
               <h5 className='title w-75'>Alibaba</h5>
               <span className='stars'>
-                <i className='far fa-heart'></i> 10
+                <i className='far fa-heart'></i> { a}
               </span>
             </div>
             <div className='card-description'>Alibaba </div>
