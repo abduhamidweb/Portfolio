@@ -1,0 +1,73 @@
+.services .section-title{
+      h2 {
+    color: lightsteelblue;
+    font-size: 39px;
+    margin: 16px 0;
+    text-align: center;
+    position: relative;
+    &::after {
+      display: block;
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: lightsteelblue;
+      content: '';
+      top: 110%;
+      left: 50%;
+      margin: auto;
+      transform: translate(-50%, -50%);
+    }
+  }
+  p{
+        padding: 20px;
+    color: lightsteelblue;
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+    font-style: 36px;
+  }
+}
+.services .icon-box {
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background: #2c2f33;
+  border: 1px solid lightsteelblue;
+}
+.services .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background: #2c2f33;
+  border-radius: 50%;
+  border: 1px solid lightsteelblue;
+}
+
+.services .icon i {
+  color: lightsteelblue;
+  font-size: 24px;
+  line-height: 0;
+  transition: 0.5s;
+}
+.services .title {
+  margin-left: 80px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  color: lightsteelblue;
+}
+
+.services .title a:hover {
+  color: lightsteelblue;
+}
+
+.services .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+  color: lightsteelblue;
+}
