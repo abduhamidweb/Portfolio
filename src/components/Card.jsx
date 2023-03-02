@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Card = () => {
+const Card = ({imgURL}) => {
   return (
     <>
       <div className='col-lg-3 col-md-6 col-sm-12'>
         <div class='card mx-auto'>
           <Link to={`/portfolio/12`}>
-            <img src='https://picsum.photos/350/233' alt='Example image' />
+            <img src={imgURL} alt='Example image' />
           </Link>
           <div className='card-info'>
             <div className='card-title'>

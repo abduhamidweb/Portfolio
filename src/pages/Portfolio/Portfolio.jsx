@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import './portfolio.scss'
+import cardURL from '../../assets/images/portfolio.jpg'
 import Card from '../../components/Card'
 const Portfolio = () => {
   const [isDay, setIsDay] = useState(true)
@@ -25,12 +26,16 @@ const Portfolio = () => {
         </div>
         <div className='container'>
           <div className='row row__twoo'>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <Card imgURL={cardURL} />
+            <Card imgURL={cardURL} />
+            <Card imgURL={cardURL} />
+            <Card imgURL={cardURL} />
+            <Card imgURL={cardURL} />
+            <Card imgURL={cardURL} />
+            <Card imgURL={cardURL} />
+            <Card imgURL={cardURL} />
+            <Card imgURL={cardURL} />
+            <Card imgURL={cardURL} />
           </div>
         </div>
       </section>
