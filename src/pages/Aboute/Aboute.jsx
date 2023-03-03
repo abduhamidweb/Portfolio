@@ -63,9 +63,7 @@ const Aboute = () => {
         <div className='container aboute-container'>
           <div className='aboute-container__row'>
             <div
-              className='aboute-container__row__col__1'
-   
-            >
+              className='aboute-container__row__col__1'>
               <h2 className='hello'>{hello}! 👋</h2>
               <p className='name'> {about}</p>
               <p>
@@ -87,8 +85,8 @@ const Aboute = () => {
                 >
                   Instagram
                 </a>
-                <a href='#' className='mx-2'>
-                  Facebook
+                <a href='#' className='mx-2 '>
+                  Facebook 
                 </a>
                 <a
                   href='https://www.linkedin.com/in/abduhamid-botirov-91a44b253/'
@@ -122,7 +120,7 @@ const Aboute = () => {
             </div>
             <div
               className='aboute-container__row__col__2'
-      
+
             >
               <Swiper
                 spaceBetween={30}
